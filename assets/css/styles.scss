@@ -69,6 +69,7 @@ a {
   align-items: center;
   font-family: $merri;
   font-size: 22px;
+  line-height: 36px;
 
   .hero {
     height: 700px;
@@ -106,10 +107,10 @@ a {
       font-family: $oswald;
       font-size: 32px;
       vertical-align: top;
+      line-height: 68px;
     }
 
     .body {
-      margin-top: 16px;
       max-width: 750px;
       display: inline-block;
     }
