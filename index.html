@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html>
   <head>
@@ -28,39 +30,21 @@
     </div>
     <div id="about" class="main-section">
       <div class="section-content">
-        <h1>ABOUT</h1>
-        <p>We are a chapter of <a href="https://thesatanictemple.com">The Satanic Temple</a> operating in Greater Boston.</p>
+        {% capture about %}{% include about.md %}{% endcapture %}
+        {{ about | markdownify }}
         <h1>FAQ</h1>
-        <div class="qna">
-          <div class="line">
-            <label>Q.</label>
-            <p class="body">Are You Guys Devil Worshipers?</p>
+        {% for question in site.data.faq %}
+          <div class="qna">
+            <div class="line">
+              <label>Q.</label>
+              <p class="body"> {{ question.q }} </p>
+            </div>
+            <div class="line">
+              <label>A.</label>
+              <p class="body"> {{ question.a }} </p>
+            </div>
           </div>
-          <div class="line">
-            <label>A.</label>
-            <p class="body"> No. We are atheists who revere Satan as a fictional character who represents the pursuit of truth, and rebellion from arbitrary authority.</p>
-          </div>
-        </div>
-        <div class="qna">
-          <div class="line">
-            <label>Q.</label>
-            <p class="body">Do You Guys Hate Christians?</p>
-          </div>
-          <div class="line">
-            <label>A.</label>
-            <p class="body"> No. We are a religious organization, and we will fight to the end defending our shared freedom of, and from, religion in the United States.</p>
-          </div>
-        </div>
-        <div class="qna">
-          <div class="line">
-            <label>Q.</label>
-            <p class="body">Hail Satan?</p>
-          </div>
-          <div class="line">
-            <label>A.</label>
-            <p class="body">Hail Satan!</p>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
     <div id="contact" class="main-section">
