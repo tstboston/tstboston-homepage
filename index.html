@@ -17,6 +17,9 @@
           <a id="about-link" href="#about" class="highlighted">
             about
           </a>
+          <a href="#join" id="contact-link">
+            join
+          </a>
           <a href="#contact" id="contact-link">
             contact
           </a>
@@ -49,6 +52,29 @@
             </div>
           {% endfor %}
         </div>
+      </div>
+    </div>
+    <div id="join" class="main-section">
+      <div class="section-content">
+        <div class="sub-section">
+          {% capture join %}{% include join.md %}{% endcapture %}
+          {{ join | markdownify }}
+        </div>
+        <form class="sub-section">
+          {% for field in site.data.join_questions %}
+            <div class="question">
+              <label class="question-label">{{ field.label }}</label>
+              {% if field.type == 'longform' %}
+              <textarea name="{{ field.name }}" placeholder="{{field.placeholder}}" resize="none"></textarea>
+              {% elsif field.type %}
+                <input name="{{ field.name }}" placeholder="{{field.placeholder}}" type="{{ field.type }}"></input>
+              {% else %}
+                <input name="{{ field.name }}"  placeholder="{{field.placeholder}}" type="text"></input>
+              {% endif %}
+            </div>
+          {% endfor %}
+          <input type="submit" value="Send!">
+        </form>
       </div>
     </div>
     <div id="contact" class="main-section">

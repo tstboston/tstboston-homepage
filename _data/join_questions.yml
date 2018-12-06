@@ -1,0 +1,11 @@
+- name: email
+  placeholder: whatever@example.net
+  label: What's your email address?
+
+- name: hello
+  label: How are you?
+  placeholder: I'm fine, thank you.
+
+- name: story
+  label: What is your life story?
+  type: longform

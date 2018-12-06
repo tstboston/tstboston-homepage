@@ -5,6 +5,7 @@ $primary-color: #333;
 $piss: #f1c232;
 //$grey: #3a3d40;
 $grey: rgba(30, 31, 33, 1);
+$text-grey: #4d4a30;
 $grey-trans: rgba(30, 31, 33, 0.7);
 $oswald: 'Oswald', sans-serif;
 $merri: 'Merriweather', serif;
@@ -49,8 +50,9 @@ a {
     }
 
     a {
-      font-family: $merri-sans;
+      font-family: $merri;
       font-size: 22px;
+      line-height: 36px;
       padding: 0 10px;
       text-decoration: none;
     }
@@ -62,17 +64,24 @@ a {
 }
 
 .main-section {
-  box-sizing: border-box;
-  display: flex;
   width: 100%;
   min-height: 800px;
   padding: 50px;
-  justify-content: center;
-  align-items: center;
   font-family: $merri;
   font-size: 22px;
   line-height: 36px;
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
   align-items: stretch;
+
+  button, input, select, textarea {
+    font-family: $merri;
+    font-size: 22px;
+    line-height: 36px;
+    color: $text-grey;
+  }
 
   .hero {
     height: 700px;
@@ -123,9 +132,47 @@ a {
   }
 }
 
+#join {
+  background-color: white;
+  color: $text-grey;
+
+  h1 {
+    color: $text-grey;
+  }
+
+  .question {
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"], textarea {
+      border: 1px solid #998;
+    }
+
+    input[type="text"] {
+      width: 500px;
+    }
+
+    textarea {
+      height: 200px;
+      width: 100%;
+      resize: none;
+    }
+  }
+  .question + .question {
+    margin-top: 40px;
+  }
+}
+
 #contact {
   background-color: $piss;
   color: white;
+   
+  h1 {
+    color: white;
+  }
 
   .social-container {
     display: flex;

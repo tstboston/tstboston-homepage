@@ -5,7 +5,8 @@ TODO
 - [x] Figure Out Jekyll
 - [x] Basic Design and Layout
 - [ ] Join Section With Form
-- [ ] Finish Contact Section
+   - [ ] Formspree for the form thing
+- [x] Finish Contact Section
 - [ ] Auto Scroll with JS
 - [ ] Mobile Layout
 
