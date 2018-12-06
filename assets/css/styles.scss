@@ -164,6 +164,22 @@ a {
   .question + .question {
     margin-top: 40px;
   }
+
+  input[type="submit"] {
+    margin-top: 40px;
+    background-color: $grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  input[type="submit"]:active, input[type="submit"]:hover {
+    background-color: $piss;
+  }
 }
 
 #contact {
