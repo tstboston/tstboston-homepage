@@ -25,32 +25,43 @@
     </div>
     <div class="landing main-section">
       <div class="section-content">
-        <img class="hero" src="/assets/images/Logo.png"/>
+        <img class="hero" src="/assets/images/Logo.png" alt="TST Boston logo"/>
       </div>
     </div>
     <div id="about" class="main-section">
       <div class="section-content">
-        {% capture about %}{% include about.md %}{% endcapture %}
-        {{ about | markdownify }}
-        <h1>FAQ</h1>
-        {% for question in site.data.faq %}
-          <div class="qna">
-            <div class="line">
-              <label>Q.</label>
-              <p class="body"> {{ question.q }} </p>
+        <div class="sub-section">
+          {% capture about %}{% include about.md %}{% endcapture %}
+          {{ about | markdownify }}
+        </div>
+        <div class="sub-section">
+          <h1>FAQ</h1>
+          {% for question in site.data.faq %}
+            <div class="qna">
+              <div class="line">
+                <label>Q.</label>
+                <p class="body"> {{ question.q }} </p>
+              </div>
+              <div class="line">
+                <label>A.</label>
+                <p class="body"> {{ question.a }} </p>
+              </div>
             </div>
-            <div class="line">
-              <label>A.</label>
-              <p class="body"> {{ question.a }} </p>
-            </div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
     <div id="contact" class="main-section">
       <div class="section-content">
-        <h1>Contact</h1>
-        <p>We are a bunch of dumb idiots lolololol ave satanas</p>
+        <div class="sub-section">
+          {% capture contact %}{% include contact.md %}{% endcapture %}
+          {{ contact | markdownify }}
+        </div>
+        <div class="social-container sub-section">
+          <a href="https://twitter.com/tstboston"><img class="social-icon" src="/assets/images/twitter.svg" alt="twitter"/></a>
+          <a href="https://www.instagram.com/tstboston"><img class="social-icon" src="/assets/images/instagram.svg" alt="insta"/></a>
+          <a href="https://www.facebook.com/TheSatanicTempleBoston"><img class="social-icon" src="/assets/images/facebook.svg" alt="facebook"/></a>
+        </div>
       </div>
     </div>
   </body>
