@@ -1,0 +1,132 @@
+body {
+  background-color: #1e1f21;
+  color: white;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: #f1c232; }
+
+a {
+  color: inherit; }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(30, 31, 33, 0.7); }
+  .header .header-content {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px; }
+    .header .header-content h1 {
+      margin: 0;
+      font-size: 38px; }
+    .header .header-content a {
+      font-family: "Merriweather", serif;
+      font-size: 22px;
+      line-height: 36px;
+      padding: 0 10px;
+      text-decoration: none; }
+    .header .header-content a:hover, .header .header-content a:active {
+      color: #f1c232; }
+
+.main-section {
+  width: 100%;
+  min-height: 800px;
+  padding: 50px;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  line-height: 36px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: stretch; }
+  .main-section button, .main-section input, .main-section select, .main-section textarea {
+    font-family: "Merriweather", serif;
+    font-size: 22px;
+    line-height: 36px;
+    color: #4d4a30; }
+  .main-section .hero {
+    height: 700px; }
+
+.section-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+#about {
+  background-image: url("/assets/images/paradise_lost_cropped.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #about h1 {
+    color: white; }
+  #about .qna {
+    padding: 5px 0;
+    margin: 0;
+    margin-bottom: 30px; }
+    #about .qna .line {
+      margin-bottom: -20px; }
+    #about .qna label {
+      display: inline-block;
+      font-family: "Oswald", sans-serif;
+      font-size: 32px;
+      vertical-align: top;
+      line-height: 68px; }
+    #about .qna .body {
+      max-width: 95%;
+      display: inline-block; }
+
+#join {
+  background-color: white;
+  color: #4d4a30; }
+  #join h1 {
+    color: #4d4a30; }
+  #join .question label {
+    display: block;
+    margin-bottom: 15px; }
+  #join .question input[type="text"], #join .question textarea {
+    border: 1px solid #998; }
+  #join .question input[type="text"] {
+    width: 500px; }
+  #join .question textarea {
+    height: 200px;
+    width: 100%;
+    resize: none; }
+  #join .question + .question {
+    margin-top: 40px; }
+  #join input[type="submit"] {
+    margin-top: 40px;
+    background-color: #1e1f21;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block; }
+  #join input[type="submit"]:active, #join input[type="submit"]:hover {
+    background-color: #f1c232; }
+
+#contact {
+  background-color: #f1c232;
+  color: white; }
+  #contact h1 {
+    color: white; }
+  #contact .social-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  #contact .social-icon {
+    color: white;
+    height: 65px;
+    width: auto; }
