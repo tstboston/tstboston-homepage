@@ -62,7 +62,7 @@ a {
   justify-content: space-evenly; }
 
 #about {
-  background-image: url("assets/images/paradise_lost_cropped.jpg");
+  background-image: url("https://tstboston.github.io/tstboston-homepage/assets/images/paradise_lost_cropped.jpg");
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
