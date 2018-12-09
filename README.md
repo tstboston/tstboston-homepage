@@ -24,3 +24,8 @@ Run `jekyll serve`. This will start the local Jekyll server. Now open up your we
 
 ## Deploy
 If you are happy with you changes run `jekyll build` to compile a web-ready version of the site. Commit your changes to git, and push them up! Now github pages will serve your updated version of the site. Hooray!
+
+## Holy Hell This Is Complicated. Why Did You Decide To Do This With Jekyll?
+- Wordpress and other CMSes like Square Space have argueably higher learning curves than all of this CLI garbage, and the skills are less transferable.
+- CMSes also tend to have WAY more features than we'd want. It's like communiting to work in an Abrahams tank.
+- Making the site in Jekyll and hosting it on github pages doesn't cost any money :D
