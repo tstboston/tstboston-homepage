@@ -6,6 +6,7 @@ body {
   overflow-x: hidden; }
 
 h1 {
+  font-size: 38px;
   font-family: "Oswald", sans-serif;
   color: #f1c232; }
 
@@ -25,8 +26,7 @@ a {
     align-items: center;
     height: 70px; }
     .header .header-content h1 {
-      margin: 0;
-      font-size: 38px; }
+      margin: 0; }
     .header .header-content a {
       font-family: "Merriweather", serif;
       font-size: 22px;
@@ -63,7 +63,7 @@ a {
 
 #about {
   background-image: url("https://tstboston.github.io/tstboston-homepage/assets/images/paradise_lost_cropped.jpg");
-  /* Create the parallax scrolling effect */
+  /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,17 +74,11 @@ a {
     padding: 5px 0;
     margin: 0;
     margin-bottom: 30px; }
-    #about .qna .line {
-      margin-bottom: -20px; }
     #about .qna label {
-      display: inline-block;
       font-family: "Oswald", sans-serif;
-      font-size: 32px;
-      vertical-align: top;
-      line-height: 68px; }
+      font-size: 32px; }
     #about .qna .body {
-      max-width: 90%;
-      display: inline-block; }
+      max-width: 90%; }
 
 #join {
   background-color: white;
