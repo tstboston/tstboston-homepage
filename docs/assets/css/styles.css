@@ -33,7 +33,7 @@ a {
       line-height: 36px;
       padding: 0 10px;
       text-decoration: none; }
-    .header .header-content a:hover, .header .header-content a:active {
+    .header .header-content a:hover, .header .header-content a:active, .header .header-content a.current {
       color: #f1c232; }
 
 .main-section {
