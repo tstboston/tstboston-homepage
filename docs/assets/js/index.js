@@ -35,7 +35,6 @@ function setupScrollDetect() {
       const currentEl = sections[i].section;
       const prevSection = sections[i + 1];
       const prevEl = prevSection && prevSection.section;
-      console.log(scrollPos, currentEl.offsetTop);
       const scrolledTo = scrollPos >= currentEl.offsetTop;
       const lastElementBottomOfPage = i == sections.length - 1 &&
         (window.innerHeight + window.scrollY) >= document.body.offsetHeight 
