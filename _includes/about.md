@@ -1,3 +1,3 @@
 About
 =====
-We are a proud chapter of [https://thesatanictemple.com](The Satanic Temple) operating in Greater Boston.
+We are a proud chapter of [The Satanic Temple](https://thesatanictemple.com) operating in Greater Boston.

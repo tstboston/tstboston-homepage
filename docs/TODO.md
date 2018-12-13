@@ -7,7 +7,7 @@ TODO
 - [x] Join Section With Form
    - [ ] Formspree for the form thing
 - [x] Finish Contact Section
-- [ ] Auto Scroll with JS
+- [x] Auto Scroll with JS
 - [ ] Mobile Layout
 
 ## Requirements
@@ -17,5 +17,5 @@ TODO
 
 ## Hosting
 - [x] Create TSTBoston Github account
-- [ ] Github Pages
+- [x] Github Pages
 - [ ] Get DNS from Godaddy (currently pointing to wordpress site)
