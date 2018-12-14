@@ -5,11 +5,11 @@ TODO
 - [x] Figure Out Jekyll
 - [x] Basic Design and Layout
 - [x] Join Section With Form
-   - [ ] Formspree for the form thing
+   - [x] Formspree for the form thing
 - [x] Finish Contact Section
 - [x] Auto Scroll with JS
 - [ ] Appearing and disappearing header
-- [ ] Mobile Layout
+- [x] Mobile Layout
 
 ## Requirements
 - [ ] Legal?
