@@ -62,7 +62,7 @@
           {% capture join %}{% include join.md %}{% endcapture %}
           {{ join | markdownify }}
         </div>
-        <form class="sub-section">
+        <form class="sub-section" action="https://formspree.io/tstbostonchapter@gmail.com" method="POST">
           {% for field in site.data.join_questions %}
             <div class="question">
               <label class="question-label">{{ field.label }}</label>

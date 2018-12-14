@@ -8,6 +8,7 @@ TODO
    - [ ] Formspree for the form thing
 - [x] Finish Contact Section
 - [x] Auto Scroll with JS
+- [ ] Appearing and disappearing header
 - [ ] Mobile Layout
 
 ## Requirements
