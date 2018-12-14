@@ -8,6 +8,7 @@ function init() {
       link: document.querySelector(`#${section}-link`)
     }
   });
+
   setupAutoScroll();
   setupScrollDetect();
 }
@@ -21,6 +22,7 @@ function setupAutoScroll() {
   });
 }
 
+// highlighting the links when scrolling to different parts of the page
 function setupScrollDetect() {
   window.addEventListener('scroll', e => {
     let found = false;

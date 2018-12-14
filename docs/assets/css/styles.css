@@ -3,7 +3,9 @@ body {
   color: white;
   padding: 0;
   margin: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 22px;
+  line-height: 36px; }
 
 h1 {
   font-size: 38px;
@@ -12,6 +14,11 @@ h1 {
 
 a {
   color: inherit; }
+
+button, input, select, textarea {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  line-height: 36px; }
 
 .header {
   position: fixed;
@@ -41,16 +48,11 @@ a {
   min-height: 800px;
   padding: 50px;
   font-family: "Merriweather", serif;
-  font-size: 22px;
-  line-height: 36px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: stretch; }
   .main-section button, .main-section input, .main-section select, .main-section textarea {
-    font-family: "Merriweather", serif;
-    font-size: 22px;
-    line-height: 36px;
     color: #4d4a30; }
   .main-section .hero {
     height: 700px; }
@@ -124,3 +126,20 @@ a {
     color: white;
     height: 65px;
     width: auto; }
+
+@media screen and (max-device-width: 640px) {
+  body {
+    -webkit-text-size-adjust: none; }
+
+  body, span, p, input, textarea, a, label, .header .header-content a {
+    font-size: 40px;
+    line-height: 64px; }
+
+  h1 {
+    font-size: 64px; }
+
+  .main-section {
+    min-height: 1600px; }
+
+  #about .qna label {
+    font-size: 50px; } }
