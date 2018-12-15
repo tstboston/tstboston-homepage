@@ -17,7 +17,7 @@ function setupAutoScroll() {
   sections.forEach(section => {
     section.link.addEventListener('click', event => {
       event.preventDefault();
-      autoScroll(section.section, 400, 'easeInQuad');
+      autoScroll(section.section, 400, 'easeInOutQuad');
     });
   });
 }

@@ -26,12 +26,12 @@ button, input, select, textarea {
   width: 100%;
   background-color: rgba(30, 31, 33, 0.7); }
   .header .header-content {
-    display: flex;
     max-width: 1140px;
     margin: 0 auto;
+    padding: 15px 15px;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 70px; }
+    align-items: center; }
     .header .header-content h1 {
       margin: 0; }
     .header .header-content a {

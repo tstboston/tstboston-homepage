@@ -46,12 +46,13 @@ button, input, select, textarea {
   background-color: $grey-trans;
 
   .header-content {
-    display: flex;
     max-width: $content-width;
     margin: 0 auto;
+    padding: 15px 15px;
+
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
 
     h1 {
       margin: 0;
