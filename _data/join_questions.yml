@@ -1,11 +1,20 @@
+- name: from
+  label: Where are you from and how did you come across TST?
+  type: longform
+
+- name: gain
+  label: What do you hope to personally gain by joining a chapter?
+  type: longform
+
+- name: bring
+  label: What do you feel you can bring to a chapter that would benefit our community?
+  type: longform
+
+- name: satanist
+  label: Do you consider yourself a Satanist? Why or why not?
+  type: longform
+
 - name: email
-  placeholder: whatever@example.net
+  placeholder: you@example.net
   label: What's your email address?
 
-- name: hello
-  label: How are you?
-  placeholder: I'm fine, thank you.
-
-- name: story
-  label: What is your life story?
-  type: longform

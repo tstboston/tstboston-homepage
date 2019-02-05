@@ -3,7 +3,7 @@ TST Boston Homepage
 
 Site created with [Jekyll](jekyllrb.com) and hosted on github pages.
 
-By TST Bost, 2018.
+By TST Boston Chapter, 2018-2019.
 
 
 ## Setup
