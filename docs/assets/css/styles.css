@@ -64,7 +64,7 @@ button, input, select, textarea {
   justify-content: space-evenly; }
 
 #about {
-  background-image: url("https://tstboston.github.io/tstboston-homepage/assets/images/paradise_lost_cropped.jpg");
+  background-image: url("../images/paradise_lost_cropped.jpg");
   /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
