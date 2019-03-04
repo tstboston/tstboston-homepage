@@ -1,5 +1,5 @@
 - name: from
-  label: Where are you from and how did you come across TST?
+  label: Tell us about yourself. Who are you, where are you from, and how did you come across TST?
   type: longform
 
 - name: gain
