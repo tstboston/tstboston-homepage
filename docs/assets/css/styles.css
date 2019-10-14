@@ -1,145 +1,69 @@
-body {
-  background-color: #1e1f21;
-  color: white;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-  font-size: 22px;
-  line-height: 36px; }
+body { background-color: #1e1f21; color: white; padding: 0; margin: 0; overflow-x: hidden; font-size: 22px; line-height: 36px; }
 
-h1 {
-  font-size: 38px;
-  font-family: "Oswald", sans-serif;
-  color: #f1c232; }
+h1 { font-size: 38px; font-family: "Oswald", sans-serif; color: #f1c232; }
 
-a {
-  color: inherit; }
+a { color: inherit; }
 
-button, input, select, textarea {
-  font-family: "Merriweather", serif;
-  font-size: 22px;
-  line-height: 36px; }
+button, input, select, textarea { font-family: "Merriweather", serif; font-size: 22px; line-height: 36px; }
 
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(30, 31, 33, 0.7); }
-  .header .header-content {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 15px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .header .header-content h1 {
-      margin: 0; }
-    .header .header-content a {
-      font-family: "Merriweather", serif;
-      font-size: 22px;
-      line-height: 36px;
-      padding: 0 10px;
-      text-decoration: none; }
-    .header .header-content a:hover, .header .header-content a:active, .header .header-content a.current {
-      color: #f1c232; }
+.header { position: fixed; top: 0; width: 100%; background-color: rgba(30, 31, 33, 0.7); }
 
-.main-section {
-  width: 100%;
-  min-height: 800px;
-  padding: 50px;
-  font-family: "Merriweather", serif;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: stretch; }
-  .main-section button, .main-section input, .main-section select, .main-section textarea {
-    color: #4d4a30; }
-  .main-section .hero {
-    height: 700px; }
+.header .header-content { max-width: 1140px; margin: 0 auto; padding: 15px 15px; display: flex; justify-content: space-between; align-items: center; }
 
-.section-content {
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; }
+.header .header-content h1 { margin: 0; }
 
-#about {
-  background-image: url("../images/paradise_lost_cropped.jpg");
-  /* parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  #about h1 {
-    color: white; }
-  #about .qna {
-    padding: 5px 0;
-    margin: 0;
-    margin-bottom: 30px; }
-    #about .qna label {
-      font-family: "Oswald", sans-serif;
-      font-size: 32px; }
-    #about .qna .body {
-      max-width: 90%; }
+.header .header-content a { font-family: "Merriweather", serif; font-size: 22px; line-height: 36px; padding: 0 10px; text-decoration: none; }
 
-#join {
-  background-color: white;
-  color: #4d4a30; }
-  #join h1 {
-    color: #4d4a30; }
-  #join .question label {
-    display: block;
-    margin-bottom: 15px; }
-  #join .question input[type="text"], #join .question textarea {
-    border: 1px solid #998; }
-  #join .question input[type="text"] {
-    width: 500px; }
-  #join .question textarea {
-    height: 200px;
-    width: 100%;
-    resize: none; }
-  #join .question + .question {
-    margin-top: 40px; }
-  #join input[type="submit"] {
-    margin-top: 40px;
-    background-color: #1e1f21;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block; }
-  #join input[type="submit"]:active, #join input[type="submit"]:hover {
-    background-color: #f1c232; }
+.header .header-content a:hover, .header .header-content a:active, .header .header-content a.current { color: #f1c232; }
 
-#contact {
-  background-color: #f1c232;
-  color: white; }
-  #contact h1 {
-    color: white; }
-  #contact .social-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-  #contact .social-icon {
-    color: white;
-    height: 65px;
-    width: auto; }
+.main-section { width: 100%; min-height: 800px; padding: 50px; font-family: "Merriweather", serif; box-sizing: border-box; display: flex; justify-content: center; align-items: stretch; }
 
-@media screen and (max-device-width: 640px) {
-  body {
-    -webkit-text-size-adjust: none; }
+.main-section button, .main-section input, .main-section select, .main-section textarea { color: #4d4a30; }
 
-  body, span, p, input, textarea, a, label, .header .header-content a {
-    font-size: 40px;
-    line-height: 64px; }
+.main-section .hero { height: 700px; }
 
-  h1 {
-    font-size: 64px; }
+.section-content { max-width: 800px; display: flex; flex-direction: column; justify-content: space-evenly; }
 
-  .main-section {
-    min-height: 1600px; }
+#about { background-image: url("../images/paradise_lost_cropped.jpg"); /* parallax scrolling effect */ background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
 
-  #about .qna label {
-    font-size: 50px; } }
+#about h1 { color: white; }
+
+#about .qna { padding: 5px 0; margin: 0; margin-bottom: 30px; }
+
+#about .qna label { font-family: "Oswald", sans-serif; font-size: 32px; }
+
+#about .qna .body { max-width: 90%; }
+
+#join { background-color: white; color: #4d4a30; }
+
+#join h1 { color: #4d4a30; }
+
+#join .question label { display: block; margin-bottom: 15px; }
+
+#join .question input[type="text"], #join .question textarea { border: 1px solid #998; }
+
+#join .question input[type="text"] { width: 500px; }
+
+#join .question textarea { height: 200px; width: 100%; resize: none; }
+
+#join .question + .question { margin-top: 40px; }
+
+#join input[type="submit"] { margin-top: 40px; background-color: #1e1f21; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; cursor: pointer; display: inline-block; }
+
+#join input[type="submit"]:active, #join input[type="submit"]:hover { background-color: #f1c232; }
+
+#contact { background-color: #f1c232; color: white; }
+
+#contact h1 { color: white; }
+
+#contact .social-container { display: flex; justify-content: space-evenly; align-items: center; }
+
+#contact .social-icon { color: white; height: 65px; width: auto; }
+
+@media screen and (max-device-width: 640px) { body { -webkit-text-size-adjust: none; }
+  body, span, p, input, textarea, a, label, .header .header-content a { font-size: 40px; line-height: 64px; }
+  h1 { font-size: 64px; }
+  .main-section { min-height: 1600px; }
+  #about .qna label { font-size: 50px; } }
+
+/*# sourceMappingURL=styles.css.map */
