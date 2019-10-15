@@ -62,21 +62,7 @@
           {% capture join %}{% include join.md %}{% endcapture %}
           {{ join | markdownify }}
         </div>
-        <form class="sub-section" action="https://formspree.io/tstbostonapplications@gmail.com" method="POST">
-          {% for field in site.data.join_questions %}
-            <div class="question">
-              <label class="question-label">{{ field.label }}</label>
-              {% if field.type == 'longform' %}
-              <textarea name="{{ field.name }}" placeholder="{{field.placeholder}}" resize="none"></textarea>
-              {% elsif field.type %}
-                <input name="{{ field.name }}" placeholder="{{field.placeholder}}" type="{{ field.type }}"></input>
-              {% else %}
-                <input name="{{ field.name }}"  placeholder="{{field.placeholder}}" type="text"></input>
-              {% endif %}
-            </div>
-          {% endfor %}
-          <input type="submit" value="Send">
-        </form>
+           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgdatXFpQso-p9_KNHh_5Zo-HTGnN6gbL4lhb-OOJd_dMkEg/viewform?embedded=true" width="840" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     </div>
     <div id="contact" class="main-section">
