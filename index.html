@@ -48,8 +48,7 @@
                 <span class="body"> {{ question.q }} </span>
               </div>
               <div class="line">
-                <label>A.</label>
-                <span class="body"> {{ question.a }} </span>
+                <span class="body"> {{ question.a | markdownify }} </span>
               </div>
             </div>
           {% endfor %}
