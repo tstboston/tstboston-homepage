@@ -14,7 +14,7 @@ To install Jekyll, you need Ruby. To install Ruby, you are going to need to be o
 - Install Ruby however you install Ruby on your OS. For instance `sudo apt-get install ruby` on linux. Google 'install ruby' on mac. I dunno.
 - Install git: `sudo apt-get install git` on linux.
 - Clone this repo: `git clone git@github.com:tstboston/tstboston-homepage.git`. Note that you will need to be given access to the repo (or just use the tstboston github account)
-- Install Jekyll (and any other gems this site might use): `bundle install`
+- Install Jekyll (and any other gems this site might use): Change directories to the project and run `bundle install`
 
 ## Make Changes
 If you just want to make changes to the content of the site, but not the form, all of the text is stored in markdown or yaml files. Look around in the `_includes` and `_data` directories. For instance, if you want to change or add a question to the FAQ, edit the `_data/faq.yml` file. The format should be pretty self explanitory.
