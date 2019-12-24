@@ -16,6 +16,14 @@ button, input, select, textarea { font-family: "Merriweather", serif; font-size:
 
 .header .header-content a:hover, .header .header-content a:active, .header .header-content a.current { color: #f1c232; }
 
+.dropdown { position: relative; display: inline-block; }
+
+.dropdown-content { display: none; position: absolute; background-color: #f1f1f1; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
+
+.dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; }
+
+.dropdown:hover .dropdown-content { display: block; }
+
 .main-section { width: 100%; min-height: 800px; padding: 50px; font-family: "Merriweather", serif; box-sizing: border-box; display: flex; justify-content: center; align-items: stretch; }
 
 .main-section button, .main-section input, .main-section select, .main-section textarea { color: #4d4a30; }
