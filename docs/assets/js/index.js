@@ -15,6 +15,7 @@ function init() {
 
 function setupAutoScroll() {
   sections.forEach(section => {
+    if (!section.section) return
     section.link.addEventListener('click', event => {
       event.preventDefault();
       autoScroll(section.section, 400, 'easeInOutQuad');

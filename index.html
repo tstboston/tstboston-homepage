@@ -1,89 +1,53 @@
 ---
+title: Menstruatin' with Satan
+layout: default
 ---
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>TST Boston</title>
-    <link rel="icon" type="image/png" href="assets/images/yellow_pentagram_white_favi.png"/>
-    <link rel="stylesheet" href="assets/css/styles.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans|Oswald" rel="stylesheet"/>
-    <script type="text/javascript" src="assets/js/autoscroll.js"></script>
-    <script type="text/javascript" src="assets/js/index.js"></script>
-  </head>
-  <body>
-    <div class="header">
-      <div class="header-content">
-        <a href="#"><h1>TST Boston</h1></a>
-        <div class="header-right">
-          <a id="about-link" href="#about" class="highlighted">
-            about
-          </a>
-          <a  id="join-link" href="#join">
-            join
-          </a>
-          <a id="contact-link" href="#contact">
-            contact
-          </a>
-          <div class="dropdown">
-            <a id="campaigns-link" href="#campaigns" class="dropbtn">
-              campaigns
-            </a>
-              <div class="dropdown-content">
-              <a href="#">MWS</a>
-            </div>
+<div class="landing main-section">
+  <div class="section-content">
+    <img class="hero" src="assets/images/Logo.png" alt="TST Boston logo"/>
+  </div>
+</div>
+<div id="about" class="main-section">
+  <div class="section-content">
+    <div class="sub-section">
+      {% capture about %}{% include about.md %}{% endcapture %}
+      {{ about | markdownify }}
+    </div>
+    <div class="sub-section">
+      <h1>FAQ</h1>
+      {% for question in site.data.faq %}
+        <div class="qna">
+          <div class="line">
+            <label>Q.</label>
+            <span class="body"> {{ question.q }} </span>
+          </div>
+          <div class="line">
+            <span class="body"> {{ question.a | markdownify }} </span>
           </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
-    <div class="landing main-section">
-      <div class="section-content">
-        <img class="hero" src="assets/images/Logo.png" alt="TST Boston logo"/>
-      </div>
+  </div>
+</div>
+<div id="join" class="main-section">
+  <div class="section-content">
+    <div class="sub-section">
+      {% capture join %}{% include join.md %}{% endcapture %}
+      {{ join | markdownify }}
     </div>
-    <div id="about" class="main-section">
-      <div class="section-content">
-        <div class="sub-section">
-          {% capture about %}{% include about.md %}{% endcapture %}
-          {{ about | markdownify }}
-        </div>
-        <div class="sub-section">
-          <h1>FAQ</h1>
-          {% for question in site.data.faq %}
-            <div class="qna">
-              <div class="line">
-                <label>Q.</label>
-                <span class="body"> {{ question.q }} </span>
-              </div>
-              <div class="line">
-                <span class="body"> {{ question.a | markdownify }} </span>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgdatXFpQso-p9_KNHh_5Zo-HTGnN6gbL4lhb-OOJd_dMkEg/viewform?embedded=true" width="840" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+</div>
+<div id="contact" class="main-section">
+  <div class="section-content">
+    <div class="sub-section">
+      {% capture contact %}{% include contact.md %}{% endcapture %}
+      {{ contact | markdownify }}
     </div>
-    <div id="join" class="main-section">
-      <div class="section-content">
-        <div class="sub-section">
-          {% capture join %}{% include join.md %}{% endcapture %}
-          {{ join | markdownify }}
-        </div>
-           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgdatXFpQso-p9_KNHh_5Zo-HTGnN6gbL4lhb-OOJd_dMkEg/viewform?embedded=true" width="840" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
+    <div class="social-container sub-section">
+      <a href="https://twitter.com/tstboston"><img class="social-icon" src="assets/images/twitter.svg" alt="twitter"/></a>
+      <a href="https://www.instagram.com/tstboston"><img class="social-icon" src="assets/images/instagram.svg" alt="insta"/></a>
+      <a href="https://www.facebook.com/TheSatanicTempleBoston"><img class="social-icon" src="assets/images/facebook.svg" alt="facebook"/></a>
     </div>
-    <div id="contact" class="main-section">
-      <div class="section-content">
-        <div class="sub-section">
-          {% capture contact %}{% include contact.md %}{% endcapture %}
-          {{ contact | markdownify }}
-        </div>
-        <div class="social-container sub-section">
-          <a href="https://twitter.com/tstboston"><img class="social-icon" src="assets/images/twitter.svg" alt="twitter"/></a>
-          <a href="https://www.instagram.com/tstboston"><img class="social-icon" src="assets/images/instagram.svg" alt="insta"/></a>
-          <a href="https://www.facebook.com/TheSatanicTempleBoston"><img class="social-icon" src="assets/images/facebook.svg" alt="facebook"/></a>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+  </div>
+</div>
